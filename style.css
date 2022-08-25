@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --black: #171321;
+  --white: #f7f8fa;
+  --PaleBlue: hsl(225, 100%, 94%);
+  --BrightBlue: hsl(245, 75%, 52%);
+  --VeryPaleBlue: hsla(233, 27%, 94%, 0.4);
+  --DesaturatedBlue: hsl(224, 23%, 55%);
+  --DarkBlue: hsl(223, 47%, 23%);
+  --font-size: 1rem;
+  --Red-Hat: "Red Hat Display", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: var(--font-size);
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--PaleBlue);
+  font-family: var(--Red-Hat);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.background {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.orderCart__background {
+  background-color: var(--white);
+  width: 450px;
+  margin: 0 auto;
+  margin-top: 100px;
+  border-radius: 20px;
+}
+
+.orderCart__display img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.orderCart__text {
+  padding: 3rem 2.5rem;
+}
+
+.orderCart__titile {
+  text-align: center;
+  font-weight: 900;
+  color: var(--DarkBlue);
+  font-size: 1.8rem;
+}
+
+.orderCart__paragraph {
+  color: var(--DesaturatedBlue);
+  text-align: center;
+  margin: 0;
+  padding: 1rem 2rem;
+}
+
+.orderCart__summary {
+  display: flex;
+  background-color: var(--VeryPaleBlue);
+  padding: 1.5rem 0rem;
+  justify-content: center;
+  gap: 1rem;
+  align-items: flex-start;
+  border-radius: 10px;
+  flex-flow: row wrap;
+  color: var(--DesaturatedBlue);
+}
+
+.orderCart__summary--planCharge {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: column wrap;
+  gap: 0.3rem;
+}
+
+.orderCart__summary--planCharge-1 {
+  color: var(--DarkBlue);
+  font-weight: 900;
+}
+
+.orderCart__summary span {
+  display: block;
+}
+
+.orderCart__summary--planChange {
+  margin-left: 5rem;
+  color: var(--BrightBlue);
+  text-decoration: underline;
+  font-weight: 900;
+  align-self: center;
+}
+
+.orderCart__paymentGateway {
+  background-color: var(--BrightBlue);
+  text-align: center;
+  color: var(--white);
+  padding: 1rem 0;
+  margin: 2rem 0;
+  border-radius: 10px;
+  box-shadow: 0 16px 50px rgba(56, 41, 224, 0.4);
+}
+
+.orderCart__cancelOrder {
+  text-align: center;
+  color: var(--DesaturatedBlue);
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
